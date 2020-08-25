@@ -1,8 +1,4 @@
-import express from 'express'
-import bodyParser from 'body-parser'
+import App from './app'
 
-const app = express()
-
-app.use(bodyParser.json())
-
-app.listen(5000)
+const app = new App()
+app.listen()
